@@ -1,0 +1,19 @@
+name: cielo_bin_query
+description: A Flutter package that helps to use Cielo's Bin Query.
+version: 1.0.0
+homepage: https://github.com/developercielo/cielo-bin-query-dart
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^0.12.2
+  cielo_oauth: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
