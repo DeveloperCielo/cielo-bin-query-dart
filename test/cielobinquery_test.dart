@@ -18,39 +18,39 @@ void main() {
       result = await binquery.query("410715");
     });
 
-    test("returns status code 200", () {
+    test("should return status code 200", () {
       expect(result.statusCode, 200);
     });
 
-    test('returns bin query response', () {
+    test('should return bin query response', () {
       expect(result.binQueryResponse, isNotNull);
     });
 
-    test('returns status', () {
+    test('should return status', () {
       expect(result.binQueryResponse.status, isNotNull);
     });
 
-    test('returns provider', () {
+    test('should return provider', () {
       expect(result.binQueryResponse.provider, isNotNull);
     });
 
-    test('returns card type', () {
+    test('should return card type', () {
       expect(result.binQueryResponse.cardType, isNotNull);
     });
 
-    test('returns foreign card', () {
+    test('should return foreign card', () {
       expect(result.binQueryResponse.foreignCard, isNotNull);
     });
 
-    test('returns corporate card', () {
+    test('should return corporate card', () {
       expect(result.binQueryResponse.corporateCard, isNotNull);
     });
 
-    test('returns issuer', () {
+    test('should return issuer', () {
       expect(result.binQueryResponse.issuer, isNotNull);
     });
 
-    test('returns issuer code', () {
+    test('should return issuer code', () {
       expect(result.binQueryResponse.issuerCode, isNotNull);
     });
   });
@@ -67,19 +67,19 @@ void main() {
       result = await binquery.query("ABC");
     });
 
-    test("returns status code 400", () {
+    test("should return status code 400", () {
       expect(result.statusCode, 400);
     });
 
-    test("returns error response", () {
+    test("should return error response", () {
       expect(result.errorResponse, isNotEmpty);
     });
 
-    test("returns 217 as error code", () {
+    test("should return 217 as error code", () {
       expect(result.errorResponse[0].code, "217");
     });
 
-    test("returns error message", () {
+    test("should return error message", () {
       expect(result.errorResponse[0], isNotNull);
     });
   });
@@ -96,19 +96,19 @@ void main() {
       result = await binquery.query("410715");
     });
 
-    test("returns status code 400", () {
+    test("should return status code 400", () {
       expect(result.statusCode, 400);
     });
 
-    test("returns error response", () {
+    test("should return error response", () {
       expect(result.errorResponse, isNotEmpty);
     });
 
-    test("returns invalid_client as error code", () {
+    test("should return invalid_client as error code", () {
       expect(result.errorResponse[0].code, "invalid_client");
     });
 
-    test("returns error message", () {
+    test("should return error message", () {
       expect(result.errorResponse[0], isNotNull);
     });
   });
