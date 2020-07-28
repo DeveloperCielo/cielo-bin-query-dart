@@ -27,31 +27,31 @@ void main() {
     });
 
     test('should return status', () {
-      expect(result.binQueryResponse.status, isNotNull);
+      expect(result.binQueryResponse?.status, isNotNull);
     });
 
     test('should return provider', () {
-      expect(result.binQueryResponse.provider, isNotNull);
+      expect(result.binQueryResponse?.provider, isNotNull);
     });
 
     test('should return card type', () {
-      expect(result.binQueryResponse.cardType, isNotNull);
+      expect(result.binQueryResponse?.cardType, isNotNull);
     });
 
     test('should return foreign card', () {
-      expect(result.binQueryResponse.foreignCard, isNotNull);
+      expect(result.binQueryResponse?.foreignCard, isNotNull);
     });
 
     test('should return corporate card', () {
-      expect(result.binQueryResponse.corporateCard, isNotNull);
+      expect(result.binQueryResponse?.corporateCard, isNotNull);
     });
 
     test('should return issuer', () {
-      expect(result.binQueryResponse.issuer, isNotNull);
+      expect(result.binQueryResponse?.issuer, isNotNull);
     });
 
     test('should return issuer code', () {
-      expect(result.binQueryResponse.issuerCode, isNotNull);
+      expect(result.binQueryResponse?.issuerCode, isNotNull);
     });
   });
 
@@ -76,11 +76,11 @@ void main() {
     });
 
     test("should return 217 as error code", () {
-      expect(result.errorResponse[0].code, "217");
+      expect(result.errorResponse[0]?.code, "217");
     });
 
     test("should return error message", () {
-      expect(result.errorResponse[0], isNotNull);
+      expect(result.errorResponse[0]?, isNotNull);
     });
   });
   
@@ -105,11 +105,11 @@ void main() {
     });
 
     test("should return invalid_client as error code", () {
-      expect(result.errorResponse[0].code, "invalid_client");
+      expect(result.errorResponse[0]?.code, "invalid_client");
     });
 
     test("should return error message", () {
-      expect(result.errorResponse[0].message, isNotNull);
+      expect(result.errorResponse[0]?.message, isNotNull);
     });
   });
 }
