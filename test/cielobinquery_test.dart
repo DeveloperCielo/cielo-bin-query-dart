@@ -109,7 +109,7 @@ void main() {
     });
 
     test("should return error message", () {
-      expect(result.errorResponse[0], isNotNull);
+      expect(result.errorResponse[0].message, isNotNull);
     });
   });
 }
