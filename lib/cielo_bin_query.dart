@@ -44,14 +44,14 @@ class CieloBinQuery {
 
     final Uri url = Uri.https(this._url, "/1/cardBin/" + bin);
 
-    final String sdkName = "cielo_bin_query";
-    final String sdkVersion = "1.0.1";
+    final String sdkName = "CieloBinQuery";
+    final String sdkVersion = "1.0.2";
 
     http.Response response = await http.get(
       url,
       headers: <String, String>{
         'Authorization': 'Bearer $token',
-        'x-sdk-version': '$sdkName\_dart@$sdkVersion',
+        'x-sdk-version': '$sdkName-Dart@$sdkVersion',
         'MerchantId': this.merchantId,
       },
     );

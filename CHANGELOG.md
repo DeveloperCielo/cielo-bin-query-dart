@@ -1,3 +1,7 @@
+## 1.0.2
+
+* Code improvements
+
 ## 1.0.1
 
 * Bug fixes and code improvements
