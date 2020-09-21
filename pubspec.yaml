@@ -10,7 +10,7 @@ dependencies:
   flutter:
     sdk: flutter
   http: ^0.12.2
-  cielo_oauth: ^1.0.2
+  cielo_oauth: ^1.1.1
 
 dev_dependencies:
   flutter_test:
