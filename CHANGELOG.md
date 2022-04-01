@@ -1,6 +1,6 @@
 ## 1.0.3
 
-* Added new prepaid field in bin_query_responses
+* Added new prepaid field in bin_query_response
 
 ## 1.0.2
 
