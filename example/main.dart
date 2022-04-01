@@ -2,11 +2,10 @@ import 'package:cielo_bin_query/cielo_bin_query.dart';
 
 void main(List<String> arguments) async {
   var binquery = CieloBinQuery(
-    clientId: "YOUR-CLIENT-ID",
-    clientSecret: "YOUR-CLIENT-SECRET",
-    merchantId: "YOUR-MERCHANT-ID",
-    environment: Environment.SANDBOX
-  );
+      clientId: "YOUR-CLIENT-ID",
+      clientSecret: "YOUR-CLIENT-SECRET",
+      merchantId: "YOUR-MERCHANT-ID",
+      environment: Environment.SANDBOX);
 
   var result = await binquery.query("410715");
   print("Status Code: ${result.statusCode}");
@@ -19,6 +18,7 @@ void main(List<String> arguments) async {
     print("Corporate Card: ${result.binQueryResponse.corporateCard}");
     print("Issuer: ${result.binQueryResponse.issuer}");
     print("Issuer Code: ${result.binQueryResponse.issuerCode}");
+    print("Pre Paid: ${result.binQueryResponse.prePaid}");
   }
 
   if (result.errorResponse != null)

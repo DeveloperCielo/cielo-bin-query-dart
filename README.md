@@ -25,6 +25,7 @@ if (result.binQueryResponse != null) {
   print("Corporate Card: ${result.binQueryResponse.corporateCard}");
   print("Issuer: ${result.binQueryResponse.issuer}");
   print("Issuer Code: ${result.binQueryResponse.issuerCode}");
+  print("Pre Paid: ${result.binQueryResponse.prePaid}");
 }
 
 if (result.errorResponse != null)
